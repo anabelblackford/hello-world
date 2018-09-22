@@ -1,0 +1,90 @@
+<stlye>
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    padding: 10px;
+ border-style: solid;
+    border-color: #FD0C94;
+    background: black;
+}
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: yellow;
+ border-style: solid;
+    border-color: #2B1DFB;
+}
+.header h1 {
+    font-size: 50px;
+}
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #ED1DFB;
+ border-style: solid;
+    border-color: #FD0C94;
+}
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #F4FB1D;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #1DF4FB;
+    color: #1DF4FB;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 100%;
+ border-style: solid;
+    border-color: #2B1DFB;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ED1DFB;
+    margin-top: 20px;
+ border-style: solid;
+    border-color: #FD0C94;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+</style>
